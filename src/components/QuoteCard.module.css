@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --bg-primary-color: #111111;
+  --bg-secondary-color: #111213;
+  --bg-tertiary-color: #121212;
+
+  --app-primary-type: Inria Sans, sans-serif;
+}
+
+
+.quoteCardContainer {
+  color: white;
+  background: #111213;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+  
+  border: 1px solid;
+
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #397DE4 -24.08%, #9231DF 47.56%, #317ADF 122.24%);
+  width: 25%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  max-width: 30vw;
+  min-width: 30vw;
+  min-height: 30vh;
+  max-height: 30vh;
+}

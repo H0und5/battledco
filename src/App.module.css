@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --bg-primary-color: #111;
+  --bg-secondary-color: #111213;
+  --bg-tertiary-color: #121212;
+
+  --app-primary-type: Inria Sans, sans-serif;
+}
+
+html {
+  background-color: var(--bg-primary-color);
+}
+
+.Container {
+  display: flex;
+  background-color: var(--bg-primary-color);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container p {
+  font-family: var(--app-primary-type);
+}

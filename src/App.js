@@ -1,9 +1,20 @@
-import './App.css';
+import Button from './components/Button';
+
+import classes from './App.module.css';
+import QuoteCard from './components/QuoteCard';
+
+import quoteArray from './QuoteArray';
 
 function App() {
+
+  console.log(quoteArray)
+
   return (
-    <div>
-      Gucci bands
+    <div className={classes.Container}>
+
+      <p>{quoteArray[0].Name}</p>
+      <QuoteCard />
+      <Button />
     </div>
   );
 }

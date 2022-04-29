@@ -51,3 +51,37 @@
   font-family: var(--app-secondary-type);
   color: var(--body-secondary-color);
 }
+
+@media screen and (max-width: 520px) {
+  .quoteCardContainer {
+    margin-top: 2rem;
+    background: -webkit-linear-gradient(90deg, #397DE4 -24.08%, #9231DF 47.56%, #317ADF 122.24%);
+    width: 70vw;
+    min-height: 20vh;
+    max-height: 70vh;
+    border-radius: 4px;
+    padding: 2px; 
+  }
+
+  .quoteCardInternal {
+    background: var(--bg-primary-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    color: #fff;
+    width: 70vw;
+    min-height: 20vh;
+    max-height: 70vh;
+    border-radius: 4px;
+  }
+
+  .quoteProperty {
+    font-family: var(--app-secondary-type);
+    text-align: center;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+  }
+}

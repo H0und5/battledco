@@ -1,10 +1,16 @@
 import classes from './QuoteCard.module.css';
 
-const QuoteCard = () => {
+const QuoteCard = ({ quote, name }) => {
+
+  console.log(quote, name)
 
   return (
     <div className={classes.quoteCardContainer}>
-        This is a card
+      <div className={classes.quoteCardInternal}>
+        {quote}
+
+        {name}
+      </div>
 
     </div>
   )

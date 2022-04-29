@@ -9,15 +9,29 @@
 }
 
 .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+
   border: 1px solid;
+
   border-image-slice: 1;
-  background-color: #111;
   border-image-source: linear-gradient(
-    90deg,
-    rgba(49, 129, 223, 0.5) -36.31%,
-    rgba(146, 49, 223, 0.5) 50.69%,
-    rgba(49, 77, 223, 0.5) 135.89%
+    to right,
+    #397de4 -24.08%,
+    #9231df 47.56%,
+    #317adf 122.24%
   );
+
+  margin-top: 4rem;
+
+  width: 30vw;
+  height: 10vh;
+
+  background: #121212;
+  border-radius: 20px;
 }
 
 .button p {

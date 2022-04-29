@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import Button from './components/Button';
 
 import classes from './App.module.css';
@@ -5,16 +7,46 @@ import QuoteCard from './components/QuoteCard';
 
 import quoteArray from './QuoteArray';
 
-function App() {
+// import modules above.
 
-  console.log(quoteArray)
+
+// useEffect(() => {}, [])
+
+
+
+
+
+
+const App = () => {
+
+  const [ quote, setQuote ] = useState({
+    quote: `${quoteArray[0].Quote}`,
+    name: `${quoteArray[0].Name}`,
+  });
+
+  // get a quote handler function
+
+  const generateQuoteHandler = () => {
+    const randomQuote = Math.floor(Math.random() * 224);
+
+    const selectedName = quoteArray[randomQuote].Name
+    const selectedQuote = quoteArray[randomQuote].Quote;
+
+    console.log(randomQuote, selectedName, selectedQuote)
+
+    setQuote({
+      name: selectedName,
+      quote: selectedQuote
+    })
+  }
+
+
+  // JSX returned
 
   return (
     <div className={classes.Container}>
-
-      <p>{quoteArray[0].Name}</p>
-      <QuoteCard />
-      <Button />
+      <QuoteCard name={quote.name} quote={quote.quote}/>
+      <Button getNewQuote={generateQuoteHandler}/>
     </div>
   );
 }

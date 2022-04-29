@@ -1,12 +1,18 @@
 
 import classes from './Button.module.css';
 
-const Button = () => {
+const Button = ({getNewQuote}) => {
 
+
+  const getQuoteHandler = (event) => {
+    event.preventDefault();
+
+    getNewQuote();
+  }
 
 
   return (
-    <button className={classes.button}>
+    <button onClick={getQuoteHandler} className={classes.button}>
       <p>Give me another quote</p>
     </button>
   )

@@ -24,6 +24,3 @@ html {
   align-items: center;
 }
 
-.Container p {
-  font-family: var(--app-secondary-type);
-}

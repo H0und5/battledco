@@ -1,28 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap');
 
 :root {
   --bg-primary-color: #111111;
   --bg-secondary-color: #111213;
   --bg-tertiary-color: #121212;
 
+  --body-secondary-color: #7D7D7D;
+
   --app-primary-type: Inria Sans, sans-serif;
+  --app-secondary-type: Buda, cursive;
 }
 
 .quoteCardContainer {
+  margin-top: 2rem;
   background: -webkit-linear-gradient(90deg, #397DE4 -24.08%, #9231DF 47.56%, #317ADF 122.24%);
   width: 70vw;
-  height: 40vh;
+  height: 50vh;
   border-radius: 4px;
   padding: 2px;
+  
 }
 
 .quoteCardInternal {
   background: var(--bg-primary-color);
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   color: #fff;
   width: 70vw;
-  height: 40vh;
+  height: 50vh;
   border-radius: 4px;
+}
+
+.divider {
+  margin: .5rem;
+}
+
+.quoteProperty {
+  font-family: var(--app-secondary-type);
+  text-align: center;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+}
+
+.nameProperty {
+  font-family: var(--app-secondary-type);
+  color: var(--body-secondary-color);
 }

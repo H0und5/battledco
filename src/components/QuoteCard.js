@@ -7,9 +7,16 @@ const QuoteCard = ({ quote, name }) => {
   return (
     <div className={classes.quoteCardContainer}>
       <div className={classes.quoteCardInternal}>
-        {quote}
 
-        {name}
+        <p className={classes.quoteProperty}>
+          {quote}
+        </p>
+
+        <div className={classes.divider}></div>
+
+        <p className={classes.nameProperty}>
+          {name}
+        </p>
       </div>
 
     </div>

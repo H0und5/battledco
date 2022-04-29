@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Button from './components/Button';
 
@@ -31,8 +31,6 @@ const App = () => {
 
     const selectedName = quoteArray[randomQuote].Name
     const selectedQuote = quoteArray[randomQuote].Quote;
-
-    console.log(randomQuote, selectedName, selectedQuote)
 
     setQuote({
       name: selectedName,
